@@ -1,8 +1,8 @@
 module.exports = {
-  entry: "./public/index.js",
+  entry: './client/App.js',
   output: {
-    path: __dirname + "/public",
-    filename: "bundle.js"
+    path: __dirname + '/public',
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
@@ -14,6 +14,9 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   watch: true
 }
