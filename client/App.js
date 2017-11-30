@@ -7,7 +7,7 @@ function App (props) {
   return (
     <div className="container">
       <Header />
-      <h1>This is the App component</h1>
+      <p>This is the App component</p>
     </div>
   )
 }
