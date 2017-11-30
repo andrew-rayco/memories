@@ -9,3 +9,7 @@ At last, a boilerplate that I understand inside and out, because I built it.
 5. `git remote add origin [new repo URL]` to link this project with the new remote repo
 6. `git remote -v` to verify new remote url has been added
 7. Commit and push and then get building!
+
+## Routing
+Routing is client side with react-router.
+There are some example server routes commented out in server.js.
