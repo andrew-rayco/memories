@@ -8,4 +8,4 @@ At last, a boilerplate that I understand inside and out, because I built it.
 4. Create a new repo on Github (or your repository service of choice) and copy the url (e.g. https://github.com/user/repo.git)
 5. `git remote add origin [new repo URL]` to link this project with the new remote repo
 6. `git remote -v` to verify new remote url has been added
-Commit and push and then get building!
+7. Commit and push and then get building!
