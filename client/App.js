@@ -1,16 +1,15 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-function helloTemplate (props) {
-  console.log(props)
+import Header from './Header'
+
+function App (props) {
   return (
-    <div>hello {props.name}</div>
+    <div className="container">
+      <Header />
+      <h1>This is the App component</h1>
+    </div>
   )
 }
 
-var data = { name: 'Andyboi' }
-var view = helloTemplate(data)
-
-var placeToMount = document.getElementById('root')
-
-ReactDOM.render(view, placeToMount)
+ReactDOM.render(<App />, document.getElementById('root'))
