@@ -1,1 +1,5 @@
-h1 { color: red; }
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  background: papayawhip;
+}

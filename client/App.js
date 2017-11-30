@@ -1,16 +1,25 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
+import React from 'react'
+import {
+  HashRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+import ReactDOM from 'react-dom'
 
-function helloTemplate (props) {
-  console.log(props)
+import Header from './Header'
+import Home from './Home'
+import OtherPage from './OtherPage'
+
+function App (props) {
   return (
-    <div>hello {props.name}</div>
+    <Router>
+      <div className="container">
+        <Header />
+        <Route exact path="/" component={Home} />
+        <Route path="/test" component={OtherPage} />
+      </div>
+    </Router>
   )
 }
 
-var data = { name: 'Andyboi' }
-var view = helloTemplate(data)
-
-var placeToMount = document.getElementById('root')
-
-ReactDOM.render(view, placeToMount)
+ReactDOM.render(<App />, document.getElementById('root'))
