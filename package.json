@@ -4,9 +4,11 @@
   "description": "A simple react redux express.js application",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js & webpack --watch",
+    "dev": "nodemon server.js & webpack --watch & npm run watch-css",
     "webpack": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass -o public/css public/css",
+    "watch-css": "nodemon -e sass -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -33,7 +35,7 @@
     "webpack": "^3.8.1"
   },
   "devDependencies": {
-    "concurrently": "^3.5.1",
+    "node-sass": "^4.7.2",
     "nodemon": "^1.12.1"
   }
 }
